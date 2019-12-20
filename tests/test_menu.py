@@ -71,7 +71,7 @@ def test_update_menu(mock_json_menu, menu):
 
     mock_json_menu.assert_called_once_with(menu)
     menu.refresh_from_db()
-    assert menu.json_content == "Return value"
+    assert menu.json_content == "xyz"
 
 
 def test_menu_item_status(menu, category, collection, page):
